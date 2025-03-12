@@ -16,7 +16,7 @@ end
 
 def get_area_code(ksiazka_tel, key1)
   if ksiazka_tel.key?(key1)
-    puts "For city " + key1.to_s + "the code is" + ksiazka_tel[key1].to_s
+    puts "For city   #{key1} the code is #{ksiazka_tel[key1]}"
   else
     puts "There is no such area in the Dictionary."
   end
