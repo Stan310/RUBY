@@ -9,14 +9,14 @@ ksiazka_tel = {
 }
 
 def get_city_names(ksiazka_tel)
-  ksiazka_tel.each{|key, value| puts "#{key}"}
+  ksiazka_tel.keys
 end
 
 
 
 def get_area_code(ksiazka_tel, key1)
   if ksiazka_tel.key?(key1)
-    puts ksiazka_tel[key1]
+    puts "For city " + key1.to_s + "the code is" + ksiazka_tel[key1].to_s
   else
     puts "There is no such area in the Dictionary."
   end
